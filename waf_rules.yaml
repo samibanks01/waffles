@@ -1,0 +1,6 @@
+# waf_rules.yaml
+rules:
+  - id: sql_injection
+    pattern: "(?i)SELECT|UPDATE|DELETE|INSERT|OR|AND"  # Case-insensitive pattern for common SQL keywords
+  - id: cross_site_scripting
+    pattern: "<script.*?>"  # Basic pattern for script tags
